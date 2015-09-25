@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>简单html5小活动开发——CSS基础</title>
+
+<link href="./bootstrap-col-min.css" rel="stylesheet">
+
+<style>
+	*{margin:0 ;padding:0 }
+
+  	.show-grid [class^=col-] {
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  background-color: #eee;
+	  background-color: rgba(86,61,124,.15);
+	  border: 1px solid #ddd;
+	  border: 1px solid rgba(86,61,124,.2);
+  }
+  
+  .bar {overflow: hidden;}
+  
+  ul{
+  	list-style: none;
+  }
+  
+  .target li{
+  	float:left;
+  	width: 30px;
+  	height: 60px;
+  }
+  
+  .dot{
+  	border-radius: 50%;
+	background-color: yellow;
+	width: 20px;
+	height: 20px;
+  }
+  
+  .progress-bar{
+  	width: 180px;
+  	height: 14px;
+  	background-color: green;
+  	margin-top: 21px;;
+  }
+  
+  .progress-bar .progress{
+  	background-color: red;
+  	height: 14px;
+  	display: block;
+  }
+
+
+</style>
+</head>
+<body>
+	<div class="bar">
+		<ul class="target">
+			<li><div>恶魔之吻</div><div class="dot"></div><div>1</div></li>
+			<li><div>1</div><div class="dot"></div><div>2</div></li>
+			<li><div>1</div><div class="dot"></div><div>3</div></li>
+			<li><div>1</div><div class="dot"></div><div>4</div></li>
+			<li><div>1</div><div class="dot"></div><div>5</div></li>
+		</ul>
+		<div>
+			<p class="progress-bar"><span class="progress" style="width:20%"></span></p>
+		</div>
+	</div>
+</body>
+</html>
